@@ -95,7 +95,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
           <div className="flex justify-center gap-4 mt-8">
 
   <a
-    href="https://linkedin.com/in/yourusername"
+    href="https://www.linkedin.com/in/subhash-sagar-817882321/"
     target="_blank"
     rel="noopener noreferrer"
     className="w-9 h-9 flex items-center justify-center 
@@ -106,7 +106,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   </a>
 
   <a
-    href="https://github.com/yourusername"
+    href="https://github.com/imshubhamh"
     target="_blank"
     rel="noopener noreferrer"
     className="w-9 h-9 flex items-center justify-center 
@@ -117,7 +117,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
   </a>
 
   <a
-    href="https://twitter.com/yourusername"
+    href="https://twitter.com/iamsinghsubhash"
     target="_blank"
     rel="noopener noreferrer"
     className="w-9 h-9 flex items-center justify-center 
