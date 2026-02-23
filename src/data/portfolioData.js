@@ -5,10 +5,7 @@ import spyiweb from "../assets/uiux/spyiweb.png"
 import nurosync from "../assets/uiux/neurosync.png"
 import learn from "../assets/uiux/student.png"
 import dweb from "../assets/uiux/dweb.png"
-
-
-
-
+import bell from "../assets/portfolio/bell.jpeg"
 
 
 const portfolioData = [
@@ -83,29 +80,29 @@ const portfolioData = [
     github: null,
   },
 
-  {
-    id: 7,
-    title: "Ifood App",
-    category: "Web development",
-    image: nagarik,
-    description:
-      "Food ordering application with secure login, cart system and payment integration.",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    live: "https://example.com",
-    github: "https://github.com/imshubhamh?tab=repositories&q=&type=&language=&sort=",
-  },
+  // {
+  //   id: 7,
+  //   title: "Ifood App",
+  //   category: "Web development",
+  //   image: nagarik,
+  //   description:
+  //     "Food ordering application with secure login, cart system and payment integration.",
+  //   tech: ["React", "Node.js", "MongoDB", "Stripe"],
+  //   live: "https://example.com",
+  //   github: "https://github.com/imshubhamh?tab=repositories&q=&type=&language=&sort=",
+  // },
 
   // ================= CERTIFICATES =================
 
   {
     id: 100,
-    title: "MERN Stack Certification",
+    title: "Bharat Electronic Limited (BEL)",
     category: "Certificates",
-    image: nagarik,
+    image: bell,
     description:
       "Completed full MERN Stack development certification with real-world projects.",
-    tech: ["MERN Stack"],
-    live: "https://certificate-link.com",
+    tech: ["Microprocessor"],
+    live: "https://drive.google.com/file/d/1PkgsGEbeZjgTFiTXK0CrkEyjgce43xg8/view?usp=sharing",
     github: null,
   },
 

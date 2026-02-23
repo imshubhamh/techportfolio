@@ -4,28 +4,59 @@ import allheartweb from "../assets/favicon.png";
 import connect4 from "../assets/c4d-logo.jpeg";
 import bell from "../assets/Bell-logo.jpg";
 
+// export const educationData = [
+//   {
+//     title: "B.Tech - Computer Science",
+//     institute: "Dr. A.P.J Abdul Kalam Technical University",
+//     duration: "2020 — 2023",
+//     description: "Completed Bachelor of Technology in Computer Science.",
+//   },
+//   {
+//     title: "Diploma - Computer Science",
+//     institute: "Government Polytechnic College, Mawana Khurd, Meerut",
+//     duration: "2017 — 2020",
+//     description: "3-Year Diploma in Computer Science Engineering.",
+//   },
+//   {
+//     title: "Intermediate (12th)",
+//     institute: "KP Inter College, Allahabad",
+//     duration: "2015 — 2017",
+//     description: "Completed 12th with Science stream.",
+//   },
+//   {
+//     title: "High School (10th)",
+//     institute: "KP Inter College, Allahabad",
+//     duration: "2015",
+//     description: "Completed High School education.",
+//   },
+// ];
+
 export const educationData = [
   {
     title: "B.Tech - Computer Science",
     institute: "Dr. A.P.J Abdul Kalam Technical University",
+    website: "https://aktu.ac.in/",
     duration: "2020 — 2023",
     description: "Completed Bachelor of Technology in Computer Science.",
   },
   {
     title: "Diploma - Computer Science",
     institute: "Government Polytechnic College, Mawana Khurd, Meerut",
+    website: "https://gpmawana.in/",
     duration: "2017 — 2020",
     description: "3-Year Diploma in Computer Science Engineering.",
   },
   {
     title: "Intermediate (12th)",
     institute: "KP Inter College, Allahabad",
+    website: "https://madhyamikshiksha.upsdc.gov.in/en-us/School-Detail/School/14520-k-p-inter-college-allahabad-prayagraj-division",
     duration: "2015 — 2017",
     description: "Completed 12th with Science stream.",
   },
   {
     title: "High School (10th)",
     institute: "KP Inter College, Allahabad",
+    website: "https://madhyamikshiksha.upsdc.gov.in/en-us/School-Detail/School/14520-k-p-inter-college-allahabad-prayagraj-division",
     duration: "2015",
     description: "Completed High School education.",
   },

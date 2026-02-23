@@ -51,9 +51,18 @@ const Resume = () => {
               {edu.title}
             </h3>
 
-            <p className="text-gray-300 mt-1 text-sm sm:text-base">
+            {/* <p className="text-gray-300 mt-1 text-sm sm:text-base">
               {edu.institute}
-            </p>
+            </p> */}
+            <a
+              href={edu.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-gray-300 hover:text-yellow-400 transition text-sm sm:text-base mt-1"
+            >
+              {edu.institute}
+              <ArrowUpRight size={14} />
+            </a>
 
             <p className="text-yellow-400 mt-1 font-medium text-sm sm:text-base">
               {edu.duration}
