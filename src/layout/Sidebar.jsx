@@ -46,13 +46,19 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
         <div className="flex flex-col items-center mt-6">
 
           <div className="relative">
-            <div className="w-32 h-32 rounded-3xl bg-[#2a2a2e] flex items-center justify-center">
+           <div className="w-32 h-32 rounded-3xl bg-[#2a2a2e] flex items-center justify-center">
+            <a
+              href="https://www.linkedin.com/in/subhash-sagar-817882321/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={avatar}
                 alt="Profile"
                 className="w-28 h-28 object-cover rounded-2xl"
               />
-            </div>
+            </a>
+          </div>
 
             <span className="absolute bottom-3 right-3 w-4 h-4 bg-green-400 rounded-full shadow-[0_0_10px_rgba(34,197,94,0.8)]" />
           </div>
