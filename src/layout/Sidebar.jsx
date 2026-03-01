@@ -9,25 +9,25 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }) => {
     <>
       {/* Overlay for mobile */}
       {sidebarOpen && (
-        <div
-          onClick={() => setSidebarOpen(false)}
-          className="fixed inset-0 bg-black/50 z-30 lg:hidden"
-        />
-      )}
-
+          <div
+            onClick={() => setSidebarOpen(false)}
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 lg:hidden transition-opacity"
+          />
+        )}
       <div
         className={`
-          fixed z-40
-          top-0 left-0
-          h-full
-          w-[280px]
+          fixed top-0 left-0
+          h-full w-[280px]
           bg-card
           border-r border-gray-700
           p-6
-          transform transition-transform duration-300
+          z-[100]
+          transition-transform duration-300 ease-in-out
           ${sidebarOpen ? "translate-x-0" : "-translate-x-full"}
+
           lg:translate-x-0
-          lg:top-1/2 lg:-translate-y-1/2
+          lg:top-1/2
+          lg:-translate-y-1/2
           lg:h-[85vh]
           lg:rounded-3xl
           lg:left-6

@@ -1,6 +1,6 @@
 
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import About from "./pages/About";
 import Sidebar from "./layout/Sidebar";
 import Navbar from "./layout/Navbar";
@@ -12,6 +12,16 @@ import Skills from "./pages/Skills";
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
+
+  useEffect(() => {
+  if (sidebarOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}, [sidebarOpen]);
+
+
   return (
     <div className="min-h-screen bg-darkBg flex">
       {/* Sidebar */}
@@ -20,8 +30,11 @@ function App() {
       <div className="flex-1 lg:ml-[320px] p-4 sm:p-6">
         <div className="relative min-h-screen bg-card rounded-3xl border border-gray-700">
           {/* Navbar */}
-          <Navbar setSidebarOpen={setSidebarOpen} />
+          <div className="flex items-center gap-2">
+            <Navbar setSidebarOpen={setSidebarOpen} />
+          </div>
           {/* Scrollable Content */}
+       
           <div className="pt-20 px-4 sm:px-8 pb-8 overflow-y-auto">
             <Routes>
               <Route path="/" element={<About />} />
