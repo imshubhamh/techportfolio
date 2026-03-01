@@ -8,6 +8,7 @@ import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
+import Gallery from "./pages/Gallery";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -34,7 +35,6 @@ function App() {
             <Navbar setSidebarOpen={setSidebarOpen} />
           </div>
           {/* Scrollable Content */}
-       
           <div className="pt-20 px-4 sm:px-8 pb-8 overflow-y-auto">
             <Routes>
               <Route path="/" element={<About />} />
@@ -42,6 +42,7 @@ function App() {
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/gallery" element={<Gallery />} />
             </Routes>
           </div>
         </div>

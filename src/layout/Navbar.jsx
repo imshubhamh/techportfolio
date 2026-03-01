@@ -1,10 +1,9 @@
-
-
-import { NavLink } from "react-router-dom";
+import { NavLink,Link  } from "react-router-dom";
 import {
-   Menu,
-    Grid3X3 ,
-   FileText,
+  Menu,
+  Images,
+  Grid3X3 ,
+  FileText,
   BarChart3,
   Settings,
   User,
@@ -46,6 +45,11 @@ const products = [
     name: "Profile",
     icon: User,
     link: "https://www.linkedin.com/in/subhash-sagar-817882321/",
+  },
+    {
+    name: "Gallery",
+    icon: Images,
+    link: "/gallery",
   },
   {
     name: "Support",
@@ -166,7 +170,7 @@ const Navbar = ({ setSidebarOpen }) => {
                 p-5
                 grid grid-cols-3 gap-4
               ">
-            {products.map((item, index) => {
+            {/* {products.map((item, index) => {
               const Icon = item.icon;
               return (
                 <a
@@ -192,7 +196,62 @@ const Navbar = ({ setSidebarOpen }) => {
                   {item.name}
                 </a>
               );
-            })}
+            })} */}
+            {products.map((item, index) => {
+  const Icon = item.icon;
+  const isInternal = item.link.startsWith("/");
+
+  if (isInternal) {
+    return (
+      <Link
+        key={index}
+        to={item.link}
+        onClick={() => setOpen(false)}
+        className="flex flex-col items-center text-xs text-gray-300 hover:text-white transition group"
+      >
+        <div className="
+          w-11 h-11 
+          bg-darkBg 
+          rounded-xl 
+          flex items-center justify-center 
+          mb-2
+          border border-gray-700
+          group-hover:border-primary
+          group-hover:bg-gray-800
+          transition
+        ">
+          <Icon size={18} />
+        </div>
+        {item.name}
+      </Link>
+    );
+  }
+
+  return (
+    <a
+      key={index}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-col items-center text-xs text-gray-300 hover:text-white transition group"
+    >
+      <div className="
+        w-11 h-11 
+        bg-darkBg 
+        rounded-xl 
+        flex items-center justify-center 
+        mb-2
+        border border-gray-700
+        group-hover:border-primary
+        group-hover:bg-gray-800
+        transition
+      ">
+        <Icon size={18} />
+      </div>
+      {item.name}
+    </a>
+  );
+})}
               </div>
             )}
           </div>
